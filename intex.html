@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style_booking.css" />
+    <title>Arrival Date and Time</title>
+  </head>
+  <body>
+    <div id="bloc_page">
+      <div id="title_page">
+        <h3>Supplier date and arrival time</h3>
+      </div>
+      <form action="arrival.php" method="POST">
+        <div id="p_OrderNo">
+          <label for="OrderNo"><strong>Order Number :</strong></label>
+          <input type="int" name="OrderNo" id="OrderNo" autofocus />
+        </div>
+
+        <br />
+        <div id="p_sku_delivered">
+          <label for="sku_delivered"
+            ><strong>How many sku can be deliver ?</strong></label
+          >
+          <input type="int" name="sku_delivered" id="sku_delivered" />
+        </div>
+
+        <br />
+        <div id="p_carton_delivered">
+          <label for="carton_delivered">
+          <strong>How many cartons can be deliver ?</strong></label>
+          <input type="int" name="carton_delivered" id="carton_delivered" />
+        </div>
+
+        <br />
+        <div id="p_arrival_date">
+          <label for="arrival_date"><strong>Arrival Date :</strong></label>
+          <input type="Date" name="arrival_date" id="arrival_date" />
+        </div>
+
+        <!-- <br/>
+					<button id="available_time">See available time</button> -->
+        <br />
+
+        <div id="p_arrival_time">
+          <label for="arrival_time"><strong>Arrival Time :</strong></label>
+          <select name="arrival_time" id="arrival_time" required>
+            <option id="time_slot_8" value="8:00">8:00</option>
+            <option id="time_slot_9" value="9:00">9:00</option>
+            <option id="time_slot_10" value="10:00">10:00</option>
+            <option id="time_slot_11" value="11:00">11:00</option>
+            <option id="time_slot_13" value="13:00">13:00</option>
+            <option id="time_slot_14" value="14:00">14:00</option>
+            <option id="time_slot_15" value="15:00">15:00</option>
+          </select>
+        </div>
+        <br />
+      </form>
+
+      <!-- Connection to the database -->
+      
+  </body>
+</html>
